@@ -26,7 +26,7 @@ ClientData cd[MAXPLAYERS + 1];
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char [] error, int err_max)
 {
-	CreateNative("KPR_GetScore", Native_GetScore);
+	CreateNative("KPRRating_GetScore", Native_GetScore);
 	RegPluginLibrary("kpr_rating");
 	return APLRes_Success;
 }
